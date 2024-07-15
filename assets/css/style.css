@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Inter, Helvetica, sans-serif;
+}
+body {
+  align-items: center;
+  background: rgb(18, 3, 96);
+  /* background: blue; */
+  display: flex;
+  flex-direction: column;
+}
+.logo-circle {
+  align-items: center;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  margin: 3rem;
+  width: 200px;
+}
+.logo {
+  height: 3.5rem;
+}
+.descricao{
+  color: white;
+  display: flex;
+  margin-bottom: 4rem;
+  text-align: center;
+  width: 25rem;
+}
+.contato {
+  display: flex;
+  flex-direction: column;
+}
+.contato button {
+  align-items: center;
+  border-radius: 20px;
+  display: flex;
+  /* justify-content: center; */
+  margin: 0.5rem;
+  padding: 0.8rem;
+  width: 25rem;
+}
+.contato button:hover{
+  opacity: 0.4;
+}
+.contato a{
+  text-decoration: none;
+}
+.contato button i{
+  font-size: 1.2rem;
+}
+#instagram{
+  background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+#instagram a{
+  color: white;
+  font-size: 1rem ;
+}
+#instagram i{
+  color: white;
+  margin-right: 7rem;
+}
+#facebook{
+  background: #4267b3;
+}
+#facebook a{
+  color: white;
+  font-size: 1rem ;
+}
+#facebook i{
+  color: white;
+  margin-right: 5rem;
+}
+#whatsapp{
+  background:  #25d366;;
+}
+#whatsapp a{
+  color: white;
+  font-size: 1rem ;
+}
+#whatsapp i{
+  color: white;
+  margin-right: 5.5rem;
+}
+
+#website i{
+  margin-right: 5.5rem;
+}
+#website a{
+  font-size: 1rem ;
+}
+.empresa{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin: 4rem;
+  text-align: center;
+}
+.empresa p{
+  font-size: 1rem;
+  font-weight: bold;
+}
+.empresa ul{
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  list-style: none;
+}
+
+@media screen and (max-width: 435px) {
+  .descricao{
+    width: 70vw;
+  }
+  .contato button{
+    width: 90vw;
+  }
+  #instagram i{
+    margin-right: 6rem;
+  }
+  #facebook i{
+    margin-right: 3.5rem;
+  }
+  #whatsapp i{
+    margin-right: 4.5rem;
+  }
+  #website i{
+    margin-right: 4.5rem;
+  }
+}
