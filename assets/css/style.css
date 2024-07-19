@@ -13,19 +13,22 @@ body {
   flex-direction: column;
 }
 .logo-circle {
+  animation: loading 0.5s alternate infinite; /*chamando a animação*/
   align-items: center;
   background-color: white;
   border-radius: 50%;
+  box-shadow: 0px 3px 10px orangered;
   display: flex;
   height: 200px;
   justify-content: center;
-  margin: 3rem;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
   width: 200px;
 }
 .logo {
   height: 3.5rem;
 }
-.descricao{
+.descricao {
   color: white;
   display: flex;
   margin-bottom: 4rem;
@@ -45,56 +48,56 @@ body {
   padding: 0.8rem;
   width: 25rem;
 }
-.contato button:hover{
+.contato button:hover {
   opacity: 0.4;
 }
-.contato a{
+.contato a {
   text-decoration: none;
 }
-.contato button i{
+.contato button i {
   font-size: 1.2rem;
 }
-#instagram{
+#instagram {
   background: linear-gradient(#7f37c9, #ff2992, #ff9807);
 }
-#instagram a{
+#instagram a {
   color: white;
-  font-size: 1rem ;
+  font-size: 1rem;
 }
-#instagram i{
+#instagram i {
   color: white;
   margin-right: 7rem;
 }
-#facebook{
+#facebook {
   background: #4267b3;
 }
-#facebook a{
+#facebook a {
   color: white;
-  font-size: 1rem ;
+  font-size: 1rem;
 }
-#facebook i{
+#facebook i {
   color: white;
   margin-right: 5rem;
 }
-#whatsapp{
-  background:  #25d366;;
+#whatsapp {
+  background: #25d366;
 }
-#whatsapp a{
+#whatsapp a {
   color: white;
-  font-size: 1rem ;
+  font-size: 1rem;
 }
-#whatsapp i{
+#whatsapp i {
   color: white;
   margin-right: 5.5rem;
 }
 
-#website i{
+#website i {
   margin-right: 5.5rem;
 }
-#website a{
-  font-size: 1rem ;
+#website a {
+  font-size: 1rem;
 }
-.empresa{
+.empresa {
   color: white;
   display: flex;
   flex-direction: column;
@@ -102,11 +105,11 @@ body {
   margin: 4rem;
   text-align: center;
 }
-.empresa p{
+.empresa p {
   font-size: 1rem;
   font-weight: bold;
 }
-.empresa ul{
+.empresa ul {
   font-size: 0.8rem;
   display: flex;
   flex-direction: column;
@@ -115,22 +118,53 @@ body {
 }
 
 @media screen and (max-width: 435px) {
-  .descricao{
+  .descricao {
     width: 70vw;
   }
-  .contato button{
+  .contato button {
     width: 90vw;
   }
-  #instagram i{
+  #instagram i {
     margin-right: 6rem;
   }
-  #facebook i{
+  #facebook i {
     margin-right: 3.5rem;
   }
-  #whatsapp i{
+  #whatsapp i {
     margin-right: 4.5rem;
   }
-  #website i{
+  #website i {
     margin-right: 4.5rem;
+  }
+
+  /* animmação logo */
+  @keyframes loading {
+    0% {
+      margin-left: 1%;
+      /* width: 40%; */
+    }
+    50% {
+      margin-left: -1%;
+      /* width: 40%; */
+    }
+    100% {
+      margin-left: 1%;
+      /* width: 40%; */
+    }
+  }
+}
+/* animmação logo */
+@keyframes loading {
+  0% {
+    margin-left: 0.5%;
+    /* width: 40%; */
+  }
+  50% {
+    margin-left: -0.5%;
+    /* width: 40%; */
+  }
+  100% {
+    margin-left: 0.5%;
+    /* width: 40%; */
   }
 }
