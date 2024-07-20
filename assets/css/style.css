@@ -8,6 +8,9 @@
 body {
   align-items: center;
   background: rgb(18, 3, 96);
+  background-image: url(/assets/imagens/image_fundo.png);
+  background-position: center;
+  background-size: contain;
   /* background: blue; */
   display: flex;
   flex-direction: column;
@@ -31,6 +34,7 @@ body {
 .descricao {
   color: white;
   display: flex;
+  justify-content: center;
   margin-bottom: 4rem;
   text-align: center;
   width: 25rem;
@@ -90,6 +94,17 @@ body {
   color: white;
   margin-right: 5.5rem;
 }
+#whatsapp1 {
+  background: #25d366;
+}
+#whatsapp1 a {
+  color: white;
+  font-size: 1rem;
+}
+#whatsapp1 i {
+  color: white;
+  margin-right: 4rem;
+}
 
 #website i {
   margin-right: 5.5rem;
@@ -132,6 +147,9 @@ body {
   }
   #whatsapp i {
     margin-right: 4.5rem;
+  }
+  #whatsapp1 i {
+    margin-right: 3rem;
   }
   #website i {
     margin-right: 4.5rem;
