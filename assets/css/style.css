@@ -16,7 +16,8 @@ body {
   flex-direction: column;
 }
 .logo-circle {
-  animation: loading 0.5s alternate infinite; /*chamando a animação*/
+  animation: bounce 2s ease infinite;
+  /* animation: loading 0.5s alternate infinite; chamando a animação */
   align-items: center;
   background-color: white;
   border-radius: 50%;
@@ -24,8 +25,8 @@ body {
   display: flex;
   height: 200px;
   justify-content: center;
-  margin-bottom: 3rem;
-  margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
   width: 200px;
 }
 .logo {
@@ -156,33 +157,38 @@ body {
   }
 
   /* animmação logo */
-  @keyframes loading {
+  /* @keyframes loading {
     0% {
       margin-left: 1%;
-      /* width: 40%; */
     }
     50% {
       margin-left: -1%;
-      /* width: 40%; */
     }
     100% {
       margin-left: 1%;
-      /* width: 40%; */
     }
-  }
+  } */
 }
 /* animmação logo */
-@keyframes loading {
+/* @keyframes loading {
   0% {
     margin-left: 0.5%;
-    /* width: 40%; */
   }
   50% {
     margin-left: -0.5%;
-    /* width: 40%; */
   }
   100% {
     margin-left: 0.5%;
-    /* width: 40%; */
   }
+} */
+@keyframes bounce {
+  0%{transform: scale(1,1) translateY(0);}
+  5%{transform: scale(1.1,0.9) translateY(0);}
+  /* 0%{transform: translateY(0);} */
+  50%{transform: scale(1,1) translateY(-4rem);}
+  75%{transform: scale(1.1,0.9) translateY(0);}
+  90%{transform: scale(1.1,0.9) translateY(0);}
+  100%{transform: scale(1,1) translateY(0);}
+
+  
 }
